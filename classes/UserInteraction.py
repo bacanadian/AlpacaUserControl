@@ -1,20 +1,23 @@
 import alpaca_trade_api as tradeapi
 from classes.logger import log
 
-base_url = "https://paper-api.alpaca.markets"
-api_key = "PKDRMTB4KT0W7NED1QDZ"
-secret_key = "ysC/bdTg5265CCwRIXMAe1k/hCn5VUUny3dOd/lk"
+# Replace these with your API connection info from the dashboard
+base_url = 'Your API URL'
+api_key_id = 'Your API Key'
+api_secret = 'Your API Secret'
+
+
 
 
 class UserInteraction:
 
     def __init__(self):  # Creates session/logs in
         try:
-            self.api = tradeapi.REST(
-                    base_url=base_url,
-                    key_id=api_key,
-                    secret_key=secret_key
-                )
+            api = tradeapi.REST(
+                base_url=base_url,
+                key_id=api_key_id,
+                secret_key=api_secret
+            )
 
 
             self.account = self.api.get_account()
