@@ -13,7 +13,7 @@ class UserInteraction:
 
     def __init__(self):  # Creates session/logs in
         try:
-            api = tradeapi.REST(
+            self.api = tradeapi.REST(
                 base_url=base_url,
                 key_id=api_key_id,
                 secret_key=api_secret
