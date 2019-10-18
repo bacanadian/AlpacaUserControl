@@ -3,8 +3,8 @@ from classes.logger import log
 
 # Replace these with your API connection info from the dashboard
 base_url = 'https://paper-api.alpaca.markets'
-api_key_id = 'AKAVR4UTXSWA2UR4JT5M'
-api_secret = 'PoaSvq2lHqTkPHD0jBY3pztZKXWcKiuX6QLk15cj'
+api_key_id = 'REPLACE'
+api_secret = 'REPLACE'
 
 
 
